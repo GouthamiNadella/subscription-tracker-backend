@@ -1,10 +1,9 @@
 {
   "build": {
-    "builder": "NIXPACKS",
-    "buildCommand": "cd subscriptiontracker && ./mvnw clean package -DskipTests"
+    "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "java -jar subscriptiontracker/target/subscriptiontracker-0.0.1-SNAPSHOT.jar",
+    "startCommand": "java -jar target/subscriptiontracker-0.0.1-SNAPSHOT.jar",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 10
   }
